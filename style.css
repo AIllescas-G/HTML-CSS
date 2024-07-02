@@ -17,3 +17,9 @@ ul {
     display: flex;
     color:white;
 }
+
+.menu svg {
+    color: white;
+    fill: white;
+
+}
