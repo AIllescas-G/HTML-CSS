@@ -100,3 +100,14 @@ search {
     height: 609.250px;
     object-fit: cover;
 }
+
+.news {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.article_header {
+    display: flex;
+    width: 250px;
+}
