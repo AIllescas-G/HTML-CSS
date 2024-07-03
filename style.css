@@ -74,8 +74,29 @@ search {
 
 /*menu redes*/
 
-
-.menu_redes a{
+.tools {
+    display: flex;
+    gap: 14px;
     fill: white;
-    margin-left: 14px;
+}
+
+/*header_secondary*/
+
+.header_secondary {
+    background-color: #1a1d24;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.header_secondary_content {
+    display: flex;
+    width: 1170px;
+    justify-content: space-between;
+}
+
+.promo_img > img {
+    width: 865.797px;
+    height: 609.250px;
+    object-fit: cover;
 }
