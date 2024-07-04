@@ -274,9 +274,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .slider .active {
-   
     background-color: #e0011a;
-
 }
 
 /* FRANJA GRIS */
@@ -294,6 +292,8 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: #f2f2f2;
     z-index: -1;
 }
+
+/* SAMURAI */
 
 .samurai {
     margin-top: 70px;
