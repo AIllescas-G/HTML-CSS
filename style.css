@@ -120,6 +120,18 @@ search {
     object-fit: cover;
 }
 
+
 .article_header_content {
     display: flex;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.article_header {
+    display: flex;
+    width: 250px;
 }
