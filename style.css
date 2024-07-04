@@ -179,34 +179,14 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* CARUSEL */
 
+
+
 .carousel {
     padding-top: 57px;
     
 }
 
-.carousel_item  {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    gap: 24px;
-}
-
-.carousel_item .items  {
-    position: relative;
-}
-
-.carousel .data{
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    }
-
-.carousel .data svg {
-    position: absolute;
-    fill: #ffffff;
-    bottom: 120px;
-    left: 50%;
-    }
+/* CARRUSEL MENU */
 
 .carousel .nav .menu {
     display: flex;
@@ -230,6 +210,33 @@ h1, h2, h3, h4, h5, h6, p {
     color: #737373;
 }
 
+
+/* CARRUSEL FOTO TEXTO */
+
+.carousel .carousel_item  {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    gap: 24px;
+}
+
+.carousel_item .items  {
+    position: relative;
+}
+
+.carousel .data {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    }
+
+.carousel .data svg {
+    position: absolute;
+    fill: #ffffff;
+    bottom: 120px;
+    left: 50%;
+    }
+
 .carousel .carousel_item img {
     width: 217.594px;
     height:298.344px ;
@@ -246,4 +253,43 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 14px;
     font-weight: 300;
     color:#737373;
+}
+
+
+
+/* BOTONES CARRUSEL */
+
+.carousel .slider {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.button-slider {
+    width: 8px;
+    height: 8px;
+    border-radius: 24px;
+    background-color: #737373;
+    margin-top: 36px;
+}
+
+.button-slider .active {
+
+    background-color: #e0011a;
+
+}
+
+/* FRANJA GRIS */
+
+.background-dark {
+    position: relative;
+}
+
+.background-light {
+    width: 100%;
+    height: 374px;
+    position: absolute;
+    top: 950px;
+    background-color: #f2f2f2;
+    z-index: -1;
 }
