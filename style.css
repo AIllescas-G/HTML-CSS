@@ -273,8 +273,8 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top: 36px;
 }
 
-.button-slider .active {
-
+.slider .active {
+   
     background-color: #e0011a;
 
 }
@@ -289,7 +289,23 @@ h1, h2, h3, h4, h5, h6, p {
     width: 100%;
     height: 374px;
     position: absolute;
+    background-position: bottom;
     top: 950px;
     background-color: #f2f2f2;
     z-index: -1;
+}
+
+.samurai {
+    margin-top: 70px;
+    height: 620px;
+    background-color: #ffffff;
+}
+
+.samurai .samurai_img{
+    background-image: url("https://filmax.themerex.net/wp-content/uploads/2018/01/bg_samurai.jpg?id=458");
+    width: 1265px;
+    height: 622px;
+    background-repeat: no-repeat;
+    background-size: 145%;
+    background-position: bottom;
 }
