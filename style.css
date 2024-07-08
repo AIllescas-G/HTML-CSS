@@ -292,18 +292,104 @@ p {
 /* SAMURAI */
 
 .samurai {
-    margin-top: 60px;
-    height: 722px;
+    margin-top:60px;
+    height: 620px;
     background-color: #ffffff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
 }
 
 .samurai .samurai_img{
     background-image: url("https://filmax.themerex.net/wp-content/uploads/2018/01/bg_samurai.jpg?id=458");
     width: 1265px;
-    height: 780px;
+    height: 700px;
     background-repeat: no-repeat;
-    background-size: 160%;
-    background-position: bottom;
-    margin-left: 400px;
+    background-size: 150%;
+    background-position:bottom;
+    margin-bottom: -7px;
+    margin-left: 0;
     
 }
+
+.samurai .items {
+    display: flex;
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    height: 700px;
+    gap: 27px;
+    padding: 36px;
+    
+}
+
+.content {
+    display: flex;
+    justify-content: right;
+}
+
+/* SAMURAI TIPOS */
+
+
+.samurai .separator {
+    width: 48px;
+    height: 1px;
+    background-color: #e0011a;
+}
+
+
+.samurai h5 {
+    font-size: 13px;
+    font-weight: 700;
+    font-style: normal;
+    color: #737373;
+    text-transform:uppercase;
+}
+
+.samurai .item-h5 {
+    display: flex;
+    gap: 20px;
+}
+
+.samurai h3 {
+    font-size: 37px;
+    font-weight: 700;
+    font-style: normal;
+    color: #1a1d24;
+    text-transform: uppercase;
+    
+}
+
+.samurai .items-h5-h3 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.samurai h6 {
+    font-size: 13px;
+    font-weight: 700;
+    font-style: normal;
+    color:#1a1d24;
+    text-transform: uppercase;
+}
+
+.samurai .item-h6 {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.samurai p {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    color: #737373;
+    width: 535px;
+    line-height: 1.1rem;
+}
+
+
