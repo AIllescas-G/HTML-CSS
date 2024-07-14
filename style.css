@@ -1,11 +1,31 @@
 /* VARIABLES */
 
+
 :root {
+    --color-black: #1a1d24;
+    --color-secondary: #cf2e2e;
+    --color-action: rgb(248, 179, 80);
+    --color-gray-2:#f2f2f2;
+    --color-gray-1: rgb(168, 168, 168);
+    --color-gray-3: #737373;
+    --color-white: #ffffff;
+    
     --font-primary: 'Roboto', sans-serif;
     --font-secondary: 'Roboto Condensed', sans-serif;
-    --font-size-base: 14px;
+    --font-size-small: 13px;
+    --font-size-medium: 20px;
+    --font-size-x-large: 36px;
+    --font-size-large: 42px;
     --font-weight-bold: 700;
     --font-weight-normal: 400;
+
+    --spacing-20: .44rem;
+    --spacing-30: .67rem;
+    --spacing-40: 1rem;
+    --spacing-50: 1.5rem;
+    --spacing-60: 2.25rem;
+    --spacing-70: 3.38rem;
+    --spacing-80: 5.06rem;
   }
 
 
@@ -16,7 +36,7 @@
   }
 
   h3 {
-    font-size: 37px;
+    font-size: var(--font-size-x-large);
     font-family: var(--font-secondary);
     font-weight: var(--font-weight-bold);
     letter-spacing: -0.3px;
@@ -30,8 +50,9 @@
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-normal);
     letter-spacing: -0.3px;
-    
   }
+
+
 
 /* HTML */
 
@@ -40,7 +61,7 @@
 }
 
 body {
-    background-color: #1a1d24;
+    background-color: var(--color-black);
     font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -77,16 +98,16 @@ p {
     display: flex;
     align-items: center;
     gap: 24px;
-    color: white;
+    color:var(--color-white);
 }
 
 .header .separator {
-    font-size: 14px;
-    color: #737373;
+    font-size: var(--font-primary);
+    color: var(--color-gray-3);
 }
 
 .header nav .menu .item {
-    font-size: 14px;
+    font-size: var(--font-primary);
     text-transform: uppercase;
     font-weight: 600;
     border-bottom: 1px solid transparent;
@@ -96,24 +117,24 @@ p {
 
 .header nav .menu .item:hover{
     cursor: pointer;
-    border-bottom: 1px solid #e0011a;
+    border-bottom: 1px solid var(--color-secondary);
 }
 .header nav ul.social {
     display: flex;
     align-items: center;
     gap: 14px;
-    fill: white;
+    fill: var(--color-white);
 }
 
 .header .tools {
     display: flex;
     align-items: center;
     gap: 40px;
-    color: white;
+    color: var(--color-white);
 }
 
 .header svg {
-    fill: #ffffff;
+    fill: var(--color-white);
     width: 18px;
     height: 18px;
 }
@@ -134,38 +155,38 @@ p {
     object-fit: cover;
 }
 
-.news .news_title {
-    color: #ffffff;
-    text-align: left;
-    line-height: 23px;
-    font-weight: 400;
-}
 
-.news .news_title p {
-    margin:  1.6rem 0 1.6rem 0;
-
-    color: #737373;
-}
 
 .news .news_title {
-    background-color: #1a1d24;
+    background-color: var(--color-black);
+    color: var(--color-white);
     width: 375.388px ;
     height: 190.416px;
     padding:33.600px ;
     position: absolute;
     top: 382px;
     left: 765px;
+}
 
+.news .news_title p {
+    margin:  1.6rem 0 1.6rem 0;
+    color: var(--color-gray-3);  
 }
 
 .news .news_title a {
-    font-size: 14px;
+    font-size: var(--font-size-base);
     margin:  1.6rem 0 1.6rem 0;
-    line-height: 23px;
-    color: #ffffff;
+    color:var(--color-white);
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-30);
 }
 
+.news .news_title a::after {
+    content: url("./img/Iconos/flecha_roja.svg");
+    margin-top: 3px;
+}
 
 .news .news_title a:hover {
  cursor: pointer;
@@ -175,9 +196,19 @@ p {
 .news .aside .title {
     font-size: 16px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--color-white);
     margin-bottom: 32px;
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-40);
+}
+
+.news .aside .title::after {
+    content: "";
+    height: 1px;
+    width: var(--spacing-50);
+    background-color: var(--color-secondary);
 
 }
 
@@ -189,18 +220,25 @@ p {
     height: 85px;
     gap: 20px;
     font-size: 15px;
-    color: #ffffff;
+    color: var(--color-white);
     margin-bottom: 24px;
     line-height: 1.2rem;
 
 }
 
- .data .data-item {
+ .news .data .data-item {
     font-size: 12px;
-    color: #737373;
+    font-family: var(--color-secondary);
+    color: var(--color-gray-1);
     letter-spacing: 1px;
     line-height: 24px;
     font-weight: 400;
+}
+
+.news .data .text-item {
+    font-size: 16px;
+    font-family: var(--font-secondary);
+    font-weight: 700;
 }
 
 
@@ -226,7 +264,7 @@ p {
 }
 
 .carousel .nav .menu .item {
-    color: #ffffff;
+    color:var(--color-white);
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
@@ -234,75 +272,83 @@ p {
 
 .carousel .separator {
     font-size: 14px;
-    color: #737373;
+    color: var(--color-gray-3);
 }
 
 
 /* CARRUSEL FOTO TEXTO */
 
-.carousel .carousel_item  {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    gap: 24px;
-}
+.carousel {
 
-.carousel_item .items  {
-    position: relative;
-}
-
-.carousel .data {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
+    .carousel_item  {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        gap: 24px;        
     }
 
-.carousel .data svg {
-    position: absolute;
-    fill: #ffffff;
-    bottom: 120px;
-    left: 50%;
+    .img {
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 89%);
     }
 
-.carousel .carousel_item img {
-    width: 217.594px;
-    height:298.344px ;
+    .carousel_item .items  {
+        position: relative;
+    }
+    
+    .data {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .data svg {
+        position: absolute;
+        fill: var(--color-white);
+        bottom: 120px;
+        left: 50%;
+    }
+    
+    .carousel_item .img {
+        width: 217.594px;
+        height:298.344px;
+        
+    }
+
+    .carousel_item h6 {
+        color: var(--color-white);
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    
+    .carousel_item p {
+        font-size: 14px;
+        font-weight: 300;
+        color:var(--color-gray-3);
+    }
+    /* BOTONES CARRUSEL */
+
+    .slider {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .button-slider {
+        width: 8px;
+        height: 8px;
+        border-radius: 24px;
+        background-color: var(--color-gray-3);
+        margin-top: 36px;
+    }
+
+    .slider .active {
+        background-color:var(--color-secondary);
+    }
+
 }
 
-.carousel .carousel_item h6 {
-    color: #ffffff;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-
-.carousel .carousel_item p {
-    font-size: 14px;
-    font-weight: 300;
-    color:#737373;
-}
-
-
-
-/* BOTONES CARRUSEL */
-
-.carousel .slider {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-}
-
-.button-slider {
-    width: 8px;
-    height: 8px;
-    border-radius: 24px;
-    background-color: #737373;
-    margin-top: 36px;
-}
-
-.slider .active {
-    background-color: #e0011a;
-}
 
 /* FRANJA GRIS */
 
@@ -316,16 +362,18 @@ p {
     position: absolute;
     background-position: bottom;
     top: 950px;
-    background-color: #f2f2f2;
+    background-color: var(--color-gray-2);
     z-index: -1;
 }
+
+
 
 /* SAMURAI */
 
 .samurai {
     margin-top:60px;
     height: 620px;
-    background-color: #ffffff;
+    background-color: var(--color-white);
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -367,7 +415,7 @@ p {
 .samurai .separator {
     width: 48px;
     height: 1px;
-    background-color: #e0011a;
+    background-color: var(--color-secondary);
 }
 
 
@@ -375,7 +423,7 @@ p {
     font-size: 13px;
     font-weight: 700;
     font-style: normal;
-    color: #737373;
+    color: var(--color-gray-3);
     text-transform:uppercase;
 }
 
@@ -388,7 +436,7 @@ p {
     font-size: 37px;
     font-weight: 700;
     font-style: normal;
-    color: #1a1d24;
+    color:var(--color-black);
     text-transform: uppercase;
     
 }
@@ -403,7 +451,7 @@ p {
     font-size: 13px;
     font-weight: 700;
     font-style: normal;
-    color:#1a1d24;
+    color:var(--color-black);
     text-transform: uppercase;
 }
 
@@ -419,7 +467,7 @@ p {
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
-    color: #737373;
+    color: var(--color-gray-3);
     width: 535px;
     line-height: 1.1rem;
 }
@@ -427,7 +475,7 @@ p {
 /* SAMURAI TIPOS  botones*/
 
 .samurai .item-h5 .view-more {
-    color: #e0011a;
+    color: var(--color-secondary);
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -439,7 +487,7 @@ p {
 }
 
 .samurai .item-h5 .play {
-    color:#1a1d24;
+    color:var(--color-black);
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -453,21 +501,68 @@ p {
 /* PORTFOLIO*/
 
 .portfolio {
+
     display: flex;
     align-items:flex-start;
     flex-wrap: nowrap;
     justify-content: space-between;
 
+    .news {
+
+        .img {
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+
+        .separator {
+            height: 1px;
+            width: var(--spacing-60);
+            background-color: var(--color-action);
+            margin-bottom: var(--spacing-60);
+        }
+        
+        .news-items {
+            position: absolute;
+            bottom: 0;
+            color: var(--color-white);
+            padding: var(--spacing-60);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .news-items .title {
+            color: var(--color-white);
+            margin-bottom: var(--spacing-50);
+        }
+
+        .small{
+            font-size: 13px;
+            margin-bottom: var(--spacing-50);
+        }
+        
+        .button-more, .button-watch {
+            font-size: 11px;
+            font-weight: var(--font-weight-bold);
+            margin-top: var(--spacing-30);
+        }
+
+        .transition {
+            display: flex;
+            flex-direction: column;
+        }
+    }
 }
 
-.portfolio .news .img {
+
+.testimonials {
+    background-color: var(--color-secondary);
     width: 100%;
-    height: auto;
-    position: relative;
-}
+    height: auto; 
 
-.portfolio .news .news-items {
-    position: absolute;
-    bottom: 0;
+    .items {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
