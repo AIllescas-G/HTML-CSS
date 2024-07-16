@@ -79,10 +79,8 @@ p {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    unicode-bidi: isolate;
-    
+    unicode-bidi: isolate; 
 }
-
 
 .layout-box {
     max-inline-size: 1170px;
@@ -105,6 +103,11 @@ p {
             align-items: center;
         }
 
+        .separator {
+            font-size: var(--font-primary);
+            color: var(--color-gray-3);
+        }
+
         ul.menu {
             display: flex;
             align-items: center;
@@ -114,25 +117,24 @@ p {
 
         .menu {
             .item {
-                font-size: var(--font-primary);
-                text-transform: uppercase;
-                font-weight: 600;
                 border-bottom: 1px solid transparent;
                 margin-top: 14px;
                 padding-bottom: 14px;
+                font-size: var(--font-secondary);
+                text-transform: uppercase;
+                font-weight: 600;
+                letter-spacing: 0.75px;
+
             }
+
+            
+
+
 
             .item:hover {
                 cursor: pointer;
                 border-bottom: 1px solid var(--color-secondary);
             }
-    
-            .item a::after {
-                content: "/";
-                margin-left: var(--spacing-50);
-                color: var(--color-gray-3);
-            }
-
         }
         
         ul.social {
@@ -142,26 +144,22 @@ p {
             fill: var(--color-white);
         }
     }
-    
-    
-    
+
     .tools {
         display: flex;
         align-items: center;
         gap: 40px;
         color: var(--color-white);
+
+        .svg {
+            fill: var(--color-white);
+            width: 18px;
+            height: 18px;
+        }
     }
     
-    .svg {
-        fill: var(--color-white);
-        width: 18px;
-        height: 18px;
-    }
-
-
+    
 }
-
-
 
 
 /* MAIN */
