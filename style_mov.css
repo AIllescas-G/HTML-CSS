@@ -1,0 +1,22 @@
+
+
+  @media (width <= 600px) {
+
+    body {
+        padding: 0 13px 0 13px !important;
+        max-inline-size: 485px !important;
+        margin: auto;
+    }
+
+    .layout-box {
+        max-inline-size: 485px !important;
+        margin: auto;
+    }
+
+   .tools {
+    display: none !important;
+   }
+   .nav {
+    display: none;
+   }
+}
