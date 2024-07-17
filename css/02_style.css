@@ -1,10 +1,5 @@
 
 
-@import url("./style_mov.css");
-
-
-
-
 /* VARIABLES */
 
 :root {
@@ -92,6 +87,9 @@ p {
     max-inline-size: 1170px;
     margin: auto;
 }
+
+
+
 
 /* HEADER */
 
