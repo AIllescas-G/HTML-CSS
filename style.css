@@ -93,6 +93,13 @@ p {
     height: 164px;
 }
 
+.sticky {
+    background-color: var(--color-black);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
 .layout-box {
     max-inline-size: 1170px;
     margin: auto;
@@ -513,8 +520,8 @@ p {
 
     display: flex;
     align-items:flex-start;
-    flex-wrap: nowrap;
     justify-content: space-between;
+    flex-wrap:nowrap;
 
     .news {
 
