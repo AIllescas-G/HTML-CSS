@@ -383,20 +383,158 @@ header{
 }
 
 
-
+/* SAMURAI */
 
 .samurai {
+    height: 620px;
     background-color: var(--color-white);
-    width: 100%;
-    height: 600px;
-    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 
     .samurai_img {
-        background-image: url("../img/bg_samurai.jpg");
+        background-image: url("https://filmax.themerex.net/wp-content/uploads/2018/01/bg_samurai.jpg?id=458");
+        width: 1265px;
+        height: 700px;
         background-repeat: no-repeat;
-        background-position: bottom left;
-        width: 170%;
-        height: 50px;
-        position: absolute;
+        background-size: 150%;
+        background-position:bottom;
+        margin-bottom: -7px;
+        margin-left: 0; 
     }
+    
+    .items {
+        display: flex;
+        display:flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+        height: 700px;
+        gap: 36px;
+        padding: 36px; 
+    }
+
+    .content {
+        display: flex;
+        justify-content: right;
+
+        .separator {
+            width: 48px;
+            height: 1px;
+            background-color: var(--color-secondary);
+        }
+        
+        h5 {
+            font-size: 13px;
+            font-weight: 700;
+            font-style: normal;
+            color: var(--color-gray-3);
+            text-transform:uppercase;
+        }
+
+        .item-h5 {
+            display: flex;
+            gap: 20px;
+        }
+
+        h3 {
+            font-size: 37px;
+            font-weight: 700;
+            font-style: normal;
+            color: var(--color-black);
+            text-transform: uppercase;
+            
+        }
+        
+        .items-h5-h3 {
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+        }
+        
+        h6 {
+            font-size: 13px;
+            font-weight: 700;
+            font-style: normal;
+            color:var(--color-black);
+            text-transform: uppercase;
+        }
+        
+        .item-h6 {
+            display: flex;
+            gap: 20px;
+            margin-top: 24px;
+        }
+          
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            font-style: normal;
+            color: var(--color-gray-3);
+            width: 535px;
+            line-height: 1.1rem;
+        }
+    }
+
+    .item-h5 {
+
+        .view-more {
+            color: var(--color-secondary);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .view-more::before {
+            content: url('../img/Iconos/flecha_roja.svg');
+        }
+        
+        .play {
+            color:var(--color-black);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .play::before {
+            content:url('../img/Iconos/play.svg')
+        }
+    
+    } 
 }
+
+.portfolio {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    
+    .news {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        
+
+        .news-items {
+            position: absolute;
+            top: 60%;
+            padding-left:var(--spacing-50);
+            color: var(--color-white);
+            display: flex;
+            flex-direction: column;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+           
+
+            
+        }
+
+    }
+
+}
+
