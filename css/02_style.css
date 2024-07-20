@@ -503,35 +503,63 @@ header{
     
     } 
 }
+/* PORTFOLIO*/
 
 .portfolio {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: auto;
-    
-    .news {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        
 
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    flex-wrap:nowrap;
+
+    .news {
+
+        .img {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            object-fit:scale-down;
+        }
+
+        .separator {
+            height: 1px;
+            width: var(--spacing-60);
+            background-color: var(--color-action);
+            margin-bottom: var(--spacing-60);
+        }
+        
         .news-items {
             position: absolute;
-            top: 60%;
-            padding-left:var(--spacing-50);
+            bottom: 0;
             color: var(--color-white);
+            padding: var(--spacing-60);
             display: flex;
             flex-direction: column;
         }
-
-        img {
-            width: 100%;
-            max-width: 100%;
+        
+        .news-items .title {
+            color: var(--color-white);
+            margin-bottom: var(--spacing-50);
         }
 
+        .small{
+            font-size: 13px;
+            margin-bottom: var(--spacing-50);
+        }
+        
+        .button-more, .button-watch {
+            font-size: 11px;
+            font-weight: var(--font-weight-bold);
+            margin-top: var(--spacing-30);
+        }
+
+        .transition {
+            display: flex;
+            flex-direction: column;
+        }
     }
 }
+
 
 
 .testimonials {
