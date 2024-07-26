@@ -29,6 +29,13 @@
     --spacing-80: 5.06rem;
   }
 
+  h2 {
+    font-family: 15px;
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    color: var(--color-white);
+  }
+
 
   h5 {
     font-family: var(--font-secondary);
@@ -132,8 +139,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 164px;
     z-index: 10;
+    padding: var(--spacing-70) 0 var(--spacing-70) 0;
 
     .nav {
 
@@ -510,6 +517,7 @@ header{
     
     } 
 }
+
 /* PORTFOLIO*/
 
 .portfolio {
@@ -588,7 +596,6 @@ header{
         }
         
         .button-more, .button-watch {
-            overflow: hidden;
             font-size: 11px;
             font-weight: var(--font-weight-bold);
             margin-top: var(--spacing-40);
@@ -621,6 +628,33 @@ header{
             align-items: center;
             color: var(--color-white);
             width: 346px;
+            
+
+            .item-img {
+                position: relative;
+            }
+
+            .round-svg {
+                background-color: var(--color-black);
+                border-radius: 100px;
+                width: 36px;
+                height: 36px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 90px;
+                left: 34px;
+            }
+
+
+            svg {
+                color: var(--color-white);
+                fill: var(--color-white);
+                height: 30px;
+                width: 30px;
+                margin-top: 4px;
+            }
 
             p {
                 font-family:serif;
@@ -665,3 +699,248 @@ header{
 }
 
 
+/* LATEST*/
+
+
+
+.latest {
+    display: block;
+    background-color: var(--color-white);
+    width: 100%;
+    height: auto;
+
+    .title {
+        padding-top: var(--spacing-80);
+        color: var(--color-black);
+        
+        .separator {
+            height: 1px;
+            width: var(--spacing-70);
+            background-color: var(--color-secondary);
+            margin-bottom: var(--spacing-60);
+        }
+
+        h3 {
+         margin-bottom: var(--spacing-60);   
+        }
+        p{
+            color: var(--color-gray-3);
+            font-family: Lora, serif;
+        }
+    }
+
+    .grid {
+        width: 100%;
+        height: 600px;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        gap: 30px;
+        padding: var(--spacing-70) 0 var(--spacing-70) 0;
+
+        .content {
+            .time {
+                text-transform: uppercase;
+                display: flex;
+                gap: var(--spacing-40);
+            }
+        }
+
+        .img {
+            width: 100%;
+            height: 100%;
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            color: var(--color-white);
+
+            .chat, .head {
+                display: flex;
+                align-items:start;
+                gap: var(--spacing-20);
+            }
+            
+            .chat::before {
+                content: url("../img/Iconos/corazon.svg");
+            }
+            
+            .head::before {    
+                content: url("../img/Iconos/chat.svg");
+            }
+        }
+
+        .img-1 {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            background-image: linear-gradient(3deg, rgba(0,0,0,0.6250875350140056) 0%, rgba(0,0,0,0.4738270308123249) 100%), url("../img/post-nina.jpg");
+
+            .content {
+                padding: var(--spacing-60);
+                h3 {
+                    margin-top: var(--spacing-40);
+                    margin-bottom: var(--spacing-50);
+                }
+                .small {
+                    text-transform: uppercase;
+                    color:var(--color-action);
+                    font-weight: var(--font-weight-bold);
+                }
+            }
+        }
+        .img-2 {
+            background-image: linear-gradient(3deg, rgba(0,0,0,0.6250875350140056) 0%, rgba(0,0,0,0.4738270308123249) 100%), url("../img/post-12-copyright-760x428.jpg");
+            .content {
+                padding: var(--spacing-60);
+                h5 {
+                    margin-top: var(--spacing-40);
+                    margin-bottom: var(--spacing-50);
+                }
+                .small {
+                    text-transform: uppercase;
+                    color:var(--color-action);
+                    font-weight: var(--font-weight-bold);
+                }
+            }
+        }
+        .img-3 {
+            background-image: linear-gradient(3deg, rgba(0,0,0,0.6250875350140056) 0%, rgba(0,0,0,0.4738270308123249) 100%), url("../img/post-5-copyright-760x428.jpg");
+            .content {
+                padding: var(--spacing-60);
+                h5 {
+                    margin-top: var(--spacing-40);
+                    margin-bottom: var(--spacing-50);
+                }
+                .small {
+                    text-transform: uppercase;
+                    color:var(--color-action);
+                    font-weight: var(--font-weight-bold);
+                }
+            }
+        }
+        .img-4 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            background-image: linear-gradient(3deg, rgba(0,0,0,0.6250875350140056) 0%, rgba(0,0,0,0.4738270308123249) 100%), url("../img/post-6-copyright-760x428.jpg"); 
+            .content {
+                padding: var(--spacing-60);
+
+                h5 {
+                    font-size: 24px;
+                    font-weight: 25px;
+                    margin-top: var(--spacing-40);
+                    margin-bottom: var(--spacing-50);
+                }
+                .small {
+                    text-transform: uppercase;
+                    color:var(--color-action);
+                    font-weight: var(--font-weight-bold);
+                }
+            }  
+        }
+    }
+}
+
+
+.footer {
+    .content {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        color: var(--color-white);
+        padding: 170px 0 180px 0;
+
+        p {
+            font-family: serif;
+            font-size: 16px;
+            opacity: 0.6;
+        }
+
+        .logo {
+        width: 100px;
+        height: 60px;
+        background-image: url(../img/logo.png);
+        fill: var(--color-white);
+        color: var(--color-white);
+        background-repeat: no-repeat;
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-40);
+            
+            a {
+                font-family: serif;
+                font-size: 15px;
+                opacity: 0.6;
+            }
+
+            h2 {
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                gap: var(--spacing-30);
+            }
+
+            h2::after {
+                content: "";
+                height: 1px;
+                width: 20px;
+                background-color: var(--color-secondary);
+                display: block;
+            }
+
+            .news-letter {
+                text-transform: uppercase;
+                font-family: var(--font-primary);
+                font-size: 11px;
+                letter-spacing:1.5px;
+                display: flex;
+                align-items:start;
+                justify-content: center;
+                gap: var(--spacing-80);
+            }
+            .news-letter::after {
+                content: url("../img/Iconos/flecha_roja.svg");
+            }
+
+            .line-separator {
+                height: 3px;
+                width: 252px;
+                background-color:var(--color-gray-2);
+
+            }
+
+            .social {
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                gap: var(--spacing-20);
+                padding-top: var(--spacing-50);
+
+                .items {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 200px;
+                    background-color: white;
+                }
+                .x {
+                    background-color: rgb(29, 161, 243);
+                }
+                .face {
+                    background-color: rgb(58, 85, 159);
+                }
+                .insta {
+                    background-color: rgb(206, 46, 146);
+                }
+                .youtube {
+                    background-color: rgb(224, 1, 26);
+                }
+            }
+        }
+
+    }
+}
