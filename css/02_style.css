@@ -642,8 +642,9 @@ header{
                 align-items: center;
                 justify-content: center;
                 position: absolute;
-                top: 90px;
-                left: 34px;
+                top: 62%;
+                left: 50%;
+                transform: translateX(-50%);
             }
 
 
