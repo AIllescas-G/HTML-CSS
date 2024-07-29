@@ -178,12 +178,6 @@ header{
                 cursor: pointer;
                 border-bottom: 1px solid var(--color-secondary);
             }
-
-            .item-focus {
-                border-bottom: 1px solid var(--color-secondary);
-            }
-
-
         }
         
         ul.social {
@@ -551,9 +545,11 @@ main {
         .img {
             width: 100%;
             height: 100%;
-            background-size:cover;
             background-repeat: no-repeat;
-            background-position: top;
+            display: block;
+            background-size:cover;
+            gap: 0;
+            overflow: hidden;
         }
          .img-1 {
 
@@ -899,7 +895,6 @@ main {
             display: flex;
             flex-direction: column;
             gap: var(--spacing-40);
-
             
             a {
                 font-family: serif;
