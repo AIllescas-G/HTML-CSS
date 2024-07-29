@@ -553,7 +553,7 @@ main {
         }
          .img-1 {
 
-            background-image: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 97%), url("../img/post-23-copyright-485x665.jpg");
+            background-image: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 97%),  url("../img/post-27-copyright-485x665.jpg");
          }
 
          .img-2 {
@@ -561,11 +561,11 @@ main {
          }
 
          .img-3 {
-            background-image: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 97%), url("../img/post-27-copyright-485x665.jpg");
+            background-image: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 97%),  url("../img/post-29-copyright-485x665.jpg");
          }
 
          .img-4 {
-            background-image: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 97%), url("../img/post-29-copyright-485x665.jpg");
+            background-image: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 97%),  url("../img/post-23-copyright-485x665.jpg");
          }
 
          .hover {
@@ -588,7 +588,7 @@ main {
             display: flex;
             flex-direction: column;
             justify-content: end;
-            padding-top: 69%;
+            padding-top: 79%;
             transition: all 0.5s;
             
             h5 {
@@ -972,5 +972,52 @@ main {
             }
         }
 
+    }
+}
+
+
+
+.nav-fixer {
+    width: 160px;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translate(top -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 3px;
+
+    .button {
+        width: 60px;
+        height: 60px;
+        background-color: var(--color-secondary);
+        display: flex;
+        gap: 0;
+        display: block;
+        padding-right: 0;
+        transition: padding-right .25s;
+        
+
+        &:hover {
+            width: 220px;
+            padding-right: 4px;
+            transition: padding-right .25;
+            cursor: pointer;
+            &::before {
+                opacity: 1;
+                transition: opacity .25s ease-in-out;
+                
+            }
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            width: 160px;
+            height: 60px;
+            background-color: rgb(46, 48, 54);
+            opacity: 0;
+        }
     }
 }
