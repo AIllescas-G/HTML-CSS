@@ -536,7 +536,6 @@ main {
     justify-content: space-between;
     flex-wrap:nowrap;
 
-    
     .news {
         padding: 0;
         width: 100%;
@@ -550,6 +549,13 @@ main {
             background-size:cover;
             gap: 0;
             overflow: hidden;
+
+                &:hover .news-items {
+                    transition: margin-right 4s;
+                    bottom: -0px;
+                    cursor: pointer;
+                    transition: all 0.5s;
+                }
         }
          .img-1 {
 
@@ -568,15 +574,7 @@ main {
             background-image: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 97%),  url("../img/post-23-copyright-485x665.jpg");
          }
 
-         .hover {
-            & :hover {
-                position: relative;
-                transition: margin-right 4s;
-                bottom: -0px;
-                cursor: pointer;
-                transition: all 0.5s;
-            }
-         }
+     
 
         .news-items {
             position: relative;
@@ -873,6 +871,7 @@ main {
     }
 }
 
+/* LATEST*/
 
 .footer {
     .content {
@@ -975,7 +974,7 @@ main {
     }
 }
 
-
+/* OTROS*/
 
 .nav-fixer {
     width: 160px;
@@ -1007,8 +1006,7 @@ main {
             cursor: pointer;
             &::before {
                 opacity: 1;
-                transition: opacity .15s ease-in-out;
-                
+                transition: opacity .15ms ease-in-out; 
             }
         }
 
