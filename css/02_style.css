@@ -994,7 +994,6 @@ main {
         background-color: var(--color-secondary);
         display: flex;
         gap: 0;
-        display: block;
         padding-right: 0;
         transition: padding-right .25s;
         
@@ -1028,4 +1027,10 @@ main {
     width: 48px;
     height: 48px;
     background-color: var(--color-black);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    .flecha {
+        padding: 8px;
+    }
 }
