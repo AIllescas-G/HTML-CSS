@@ -1,0 +1,93 @@
+/* TESTIMONIALS*/
+
+
+.testimonials {
+    background-color: rgb(224, 1, 26);
+    width: 100%;
+    height: auto; 
+    padding: 120px 0 120px 0;
+
+    .items {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: var(--color-white);
+            width: 346px;
+            
+
+            .item-img {
+                position: relative;
+            }
+
+            .round-svg {
+                background-color: var(--color-black);
+                border-radius: 100px;
+                width: 36px;
+                height: 36px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 62%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+
+            svg {
+                color: var(--color-white);
+                fill: var(--color-white);
+                height: 30px;
+                width: 30px;
+                margin-top: 4px;
+            }
+
+            p {
+                font-family:serif;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 28px;
+                margin-bottom: var(--spacing-60);
+            }
+
+            h4 {
+                margin-bottom: var(--spacing-30);
+            }
+             small {
+                font-family: var(--font-primary);
+                font-size: 12px ;
+                font-weight: 400;
+                opacity: 0.75;
+                line-height: 15.6px;
+             }
+        }
+
+        .img {
+            background-size:cover;
+            border-radius: 150px;
+            background-position: center;
+            height: 105px;
+            width: 105px;
+            background-repeat: no-repeat;
+            margin-bottom: var(--spacing-60);
+        }
+
+        .img-1 {
+            background-image: url("../img/1test-copyright-105x105.jpg");
+        }
+        .img-2 {
+            background-image: url("../img/2test-copyright-105x105.jpg") ;
+        }
+        .img-3 {
+            background-image: url("../img/3test-copyright-105x105.jpg");
+        }
+    }
+}
+
+

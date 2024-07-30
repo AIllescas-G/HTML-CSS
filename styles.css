@@ -1,0 +1,14 @@
+@import url(01-settings/variables.css);
+
+@import url(02-tools/normalize.css);
+
+@import url(03-objects/01-header.css);
+@import url(03-objects/02-news.css);
+@import url(03-objects/03-carousel.css);
+@import url(03-objects/04-samurai.css);
+@import url(03-objects/05-portfolio.css);
+@import url(03-objects/06-testimonials.css);
+@import url(03-objects/07-latest.css);
+@import url(03-objects/08-footer.css);
+
+

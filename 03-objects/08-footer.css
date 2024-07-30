@@ -1,0 +1,163 @@
+/* FOOTER*/
+
+.footer {
+    .content {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        color: var(--color-white);
+        padding: 170px 0 180px 0;
+
+        p {
+            font-family: serif;
+            font-size: 16px;
+            opacity: 0.6;
+        }
+
+        .logo {
+        width: 100px;
+        height: 60px;
+        background-image: url(../img/logo.png);
+        fill: var(--color-white);
+        color: var(--color-white);
+        background-repeat: no-repeat;
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-40);
+            
+            a {
+                font-family: serif;
+                font-size: 15px;
+                opacity: 0.6;
+            }
+
+            h2 {
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                gap: var(--spacing-30);
+            }
+
+            h2::after {
+                content: "";
+                height: 1px;
+                width: 20px;
+                background-color: var(--color-secondary);
+                display: block;
+            }
+
+            .news-letter {
+                text-transform: uppercase;
+                font-family: var(--font-primary);
+                font-size: 11px;
+                letter-spacing:1.5px;
+                display: flex;
+                align-items:start;
+                justify-content: center;
+                gap: var(--spacing-80);
+            }
+            .news-letter::after {
+                content: url("../img/Iconos/flecha_roja.svg");
+            }
+
+            .line-separator {
+                height: 3px;
+                width: 252px;
+                background-color:var(--color-gray-2);
+
+            }
+
+            .social {
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                gap: var(--spacing-20);
+                padding-top: var(--spacing-50);
+
+                .items {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 200px;
+                    background-color: white;
+                }
+                .x {
+                    background-color: rgb(29, 161, 243);
+                }
+                .face {
+                    background-color: rgb(58, 85, 159);
+                }
+                .insta {
+                    background-color: rgb(206, 46, 146);
+                }
+                .youtube {
+                    background-color: rgb(224, 1, 26);
+                }
+            }
+        }
+
+    }
+}
+
+/* OTROS*/
+
+.nav-fixer {
+    width: 160px;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translate(top -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 3px;
+    
+
+    .button {
+        width: 60px;
+        height: 60px;
+        background-color: var(--color-secondary);
+        display: flex;
+        gap: 0;
+        padding-right: 0;
+        transition: padding-right .25s;
+        
+
+        &:hover {
+            width: 220px;
+            padding-right: 4px;
+            transition: padding-right .25;
+            cursor: pointer;
+            &::before {
+                opacity: 1;
+                transition: opacity .15ms ease-in-out; 
+            }
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            width: 160px;
+            height: 60px;
+            background-color: rgb(46, 48, 54);
+            opacity: 0;
+        }
+    }
+}
+
+.button-anchor {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 48px;
+    height: 48px;
+    background-color: var(--color-black);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    .flecha {
+        padding: 8px;
+    }
+}

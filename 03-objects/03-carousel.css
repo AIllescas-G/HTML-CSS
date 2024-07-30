@@ -1,0 +1,85 @@
+ /* CAROUSEL */
+  
+  .background-light {
+      background-color: rgb(242, 242, 242);
+      width: 100%;
+      min-height: auto;
+  }
+  
+  .carousel {
+      position: relative;
+      top: -95px;
+      .nav {
+          .menu {
+              display: flex;
+              gap: var(--spacing-40);
+              margin-bottom: var(--spacing-60);
+  
+              span {
+                  font-size: var(--font-size-small);
+                  font-weight: var(--font-weight-bold);
+                  text-transform: uppercase;
+                  font-family: var(--font-secondary);
+                  letter-spacing: 1.1;
+                  color: var(--color-white);
+              }
+          }
+  
+      }
+  
+      .carousel_item{
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+      }
+      .items {
+          position: relative;
+  
+          .img {
+              background-size: cover;
+              width: 90%;
+              width: 259px;
+              height: 355px;
+          }
+          .img-1 {
+              background-image: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 89%), url("../img/post-20-copyright-485x598.jpg");
+          }
+          .img-2 {
+              background-image: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 89%), url("../img/post-19-copyright-485x598.jpg");
+          }
+          .img-3 {
+              background-image: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 89%), url("../img/post-23-copyright-485x598.jpg");
+          }
+          .img-4 {
+              background-image:radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 89%),  url("../img/post-24-copyright-485x598.jpg");
+          }
+  
+          .data {
+              position: absolute;
+              bottom: var(--spacing-40);
+              left: var(--spacing-40);
+  
+              h6 {
+                  color: var(--color-white);
+                  text-transform: uppercase;
+                  margin-bottom: var(--spacing-20);
+              }
+  
+              span {
+                  font-size: 12px;
+                  color: var(--color-gray-1);
+                  letter-spacing: 0;
+              }
+  
+              svg {
+                  position: absolute;
+                  bottom: 140px;
+                  left: 90%;
+                  fill: var(--color-gray-2);
+              }
+          }
+      }
+  }
+  
+  
+ 
