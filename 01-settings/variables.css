@@ -118,4 +118,8 @@ p {
 .layout-box {
     max-inline-size: 1100px;
     margin: auto;
+    @media (min-width: 1950px) {
+      max-inline-size: 1200px;
+    }
+    
 }
