@@ -35,6 +35,12 @@
         gap: 30px;
         padding: var(--spacing-70) 0 var(--spacing-70) 0;
 
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: 1fr; 
+            grid-template-rows: 2fr 1fr 1fr 1fr  ;
+            height: 1500px;
+          }
+
         .content {
             .time {
                 text-transform: uppercase;
@@ -72,6 +78,10 @@
         .img-1 {
             grid-row-start: 1;
             grid-row-end: 3;
+            @media screen and (max-width: 1024px) {
+                grid-row-start: 1;
+                grid-row-end: 2;
+              }
             background-image: linear-gradient(3deg, rgba(0,0,0,0.6250875350140056) 0%, rgba(0,0,0,0.4738270308123249) 100%), url("../img/post-nina.jpg");
 
             .content {
@@ -120,6 +130,13 @@
         .img-4 {
             grid-column-start: 2;
             grid-column-end: 4;
+
+            @media screen and (max-width: 1024px) {
+                grid-column-start: 1;
+                grid-column-end: 1;
+              }
+
+            
             background-image: linear-gradient(3deg, rgba(0,0,0,0.6250875350140056) 0%, rgba(0,0,0,0.4738270308123249) 100%), url("../img/post-6-copyright-760x428.jpg"); 
             .content {
                 padding: var(--spacing-60);
