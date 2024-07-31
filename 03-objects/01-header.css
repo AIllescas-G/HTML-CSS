@@ -24,6 +24,7 @@ header{
 
 
     .nav {
+        display: block;
 
         ul {
             display: flex;
@@ -31,7 +32,10 @@ header{
         }
 
         @media screen and (max-width: 1024px) {
-            visibility: hidden;
+            display: none;
+          }
+          @media screen and (max-width: 850px) {
+            display: none;
           }
 
         .separator {
@@ -83,8 +87,10 @@ header{
             height: 18px;
         }
         @media screen and (max-width: 1024px) {
-        
-            visibility: hidden;
+            display: none;
+          }
+          @media screen and (max-width: 850px) {
+            display: none;
           }
     }    
 }

@@ -4,6 +4,12 @@
       background-color: rgb(242, 242, 242);
       width: 100%;
       min-height: auto;
+
+      @media screen and (max-width: 1024px) {
+        width: 100%;
+        min-height: auto;
+      }
+      
   }
   
   .carousel {
@@ -47,6 +53,7 @@
                 width: 212px;
                 height: 330px;
               }
+
               
           }
           .img-1 {
@@ -98,6 +105,10 @@
       .data-hidden {
         display: block;
         @media screen and (max-width: 1024px) {
+            display: none;
+          }
+          
+          @media screen and (max-width: 1024px) {
             display: none;
           }
        
