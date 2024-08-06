@@ -7,6 +7,10 @@
     justify-content: space-between;
     flex-wrap:nowrap;
 
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
+
     .news {
         padding: 0;
         width: 100%;
@@ -59,13 +63,19 @@
             justify-content: end;
             padding-top: 60%;
             transition: all 0.5s;
+
             @media (min-width: 1950px) {
                 padding-top: 100%;
               }
             
+
             h5 {
                 font-size: 25px;
                 font-weight: var(--font-weight-bold);
+
+                @media screen and (max-width: 800px) {
+                    font-size: 16px; 
+                  }
             }
         }
 

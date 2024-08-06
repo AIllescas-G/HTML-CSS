@@ -1,4 +1,6 @@
  /* SAMURAI */
+
+
   
  .background-withe {
     background-color: var(--color-white);
@@ -11,6 +13,12 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
   
 
     .samurai_img {
@@ -38,8 +46,13 @@
         height: 450px;
         gap: 36px;
         padding-left: 36px; 
+
         @media screen and (max-width: 1024px) {
             width: 136%;
+          }
+
+          @media screen and (max-width: 768px) {
+            width: 100%;
           }
     }
 
@@ -102,9 +115,14 @@
             color: var(--color-gray-3);
             width: 535px;
             line-height: 1.1rem;
-            @media screen and (max-width: 1024px) {
-                width: 600px;
-              }
+                @media screen and (max-width: 1024px) {
+                    width: 600px;
+                }
+
+                @media screen and (max-width: 1024px) {
+                    width: 440px;
+                }
+            
             
         }
     }
