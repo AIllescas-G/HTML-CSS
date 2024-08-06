@@ -137,9 +137,11 @@
         @media screen and (max-width: 1024px) {
             display: none;
           }
+
+          
+          @media screen and (max-width: 705px) {
+            display: none;
+          }
        
       }
-  }
-  
-  
- 
+    }
