@@ -19,7 +19,6 @@
         padding: 0 !important;
         margin: 0 !important;
       }
-  
 
     .samurai_img {
         background-image: url("https://filmax.themerex.net/wp-content/uploads/2018/01/bg_samurai.jpg?id=458");
@@ -72,6 +71,9 @@
             font-style: normal;
             color: var(--color-gray-3);
             text-transform:uppercase;
+            @media screen and (max-width: 481px) {
+                width: 450px;
+              }
         }
 
         .item-h5 {
@@ -106,6 +108,8 @@
             display: flex;
             gap: 20px;
             margin-top: 24px;
+            @media screen and (max-width: 481px) {
+                margin-top: 0;
         }
           
         p {
@@ -119,8 +123,8 @@
                     width: 600px;
                 }
 
-                @media screen and (max-width: 1024px) {
-                    width: 440px;
+                @media screen and (max-width: 481px) {
+                    width: 100%;
                 }
             
             
