@@ -1,7 +1,5 @@
  /* SAMURAI */
-
-
-  
+ 
  .background-withe {
     background-color: var(--color-white);
     width: 100%;
@@ -45,6 +43,7 @@
         height: 450px;
         gap: 36px;
         padding-left: 36px; 
+        width: 550px;
 
         @media screen and (max-width: 1024px) {
             width: 136%;
